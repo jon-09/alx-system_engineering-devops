@@ -14,3 +14,4 @@
 14th script changes the group ownership of the file "hello"
 15th script changes owner and group of all files and directories
 16th script changes the owner and group owner of "hello" file to vincent and staff resp
+17th script changes the owner of file "hello" to betty only if it is owned by guillaume
