@@ -12,3 +12,4 @@
 12th script adds permissions to all directories
 13th script creates a directory with permissions 751
 14th script changes the group ownership of the file "hello"
+15th script changes owner and group of all files and directories
