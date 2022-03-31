@@ -8,3 +8,4 @@
 8th script adds execution permissions to all users of the file "hello"
 9th script adds execution permissions to all users of the file "hello" exept owner and group
 10th script sets mode of hello file to "-rwxr-x-wx"
+11th script mirrors permission of the "hello" file to the "olleh" file
