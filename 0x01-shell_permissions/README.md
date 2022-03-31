@@ -4,3 +4,4 @@
 4th script chnages ownership of a file
 5th script creates an empty file
 6th script adds execute permission to file"hello"
+7th script adds execute permission to owner and group and read permission to other users
