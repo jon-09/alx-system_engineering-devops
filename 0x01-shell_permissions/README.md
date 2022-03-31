@@ -7,3 +7,4 @@
 7th script adds execute permission to owner and group and read permission to other users
 8th script adds execution permissions to all users of the file "hello"
 9th script adds execution permissions to all users of the file "hello" exept owner and group
+10th script sets mode of hello file to "-rwxr-x-wx"
