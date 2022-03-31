@@ -11,3 +11,4 @@
 11th script mirrors permission of the "hello" file to the "olleh" file
 12th script adds permissions to all directories
 13th script creates a directory with permissions 751
+14th script changes the group ownership of the file "hello"
