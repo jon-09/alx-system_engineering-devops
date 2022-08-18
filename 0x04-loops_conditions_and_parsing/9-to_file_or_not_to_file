@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This bash script taht gives you information about the holbertonschool file.
-file="school"
+file="holbertonschool"
 if [ -e "$file" ]
 then
 	echo "$file file exists"
