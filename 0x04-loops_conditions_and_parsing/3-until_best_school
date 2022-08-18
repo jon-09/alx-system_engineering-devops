@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# While loop to print 10 Best School
+i=0
+until [ $i -eq 10 ];
+do
+	echo "Best School"
+	i=$((i + 1))
+done
