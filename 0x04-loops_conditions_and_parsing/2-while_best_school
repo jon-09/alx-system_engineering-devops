@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This bash script displays Holberton School 10 times, using the while loop
+i=0
+while [ "$i" -lt 10 ]
+	do
+		echo "Best School"
+		let "i += 1"
+	done
