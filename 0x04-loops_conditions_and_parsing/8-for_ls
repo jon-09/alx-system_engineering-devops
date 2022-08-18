@@ -2,6 +2,6 @@
 # For ls
 cmd=$(ls)
 for f in $cmd
-do
-    echo "$f" | cut -d "-" -f2
-done
+	do
+    		echo "$f" | cut -d "-" -f 2
+	done
