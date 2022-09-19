@@ -1,0 +1,2 @@
+url: https://imgur.com/gallery/wDspTtD 
+We currently have 3 servers. We separated the web server, database, and application server into separate servers. As soon as a set of servers cooperate, they transform into a cluster server. To divide the workload across them, we will additionally add an additional HAproxy loadbalancer. To distribute the workload among the servers, this load balancer will collaborate with the other load balancer.
