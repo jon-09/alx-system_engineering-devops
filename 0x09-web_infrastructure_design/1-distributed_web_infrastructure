@@ -1,3 +1,5 @@
+url: https://imgur.com/gallery/EPHtxxX 
+
 1. There are currently two servers. Each server has a separate codebase, database, web server,
     and application server. If there is a lot of traffic if the other server fails, it will be useful. A HA proxy-
     loadbalancer is also present. The traffic will be split between the two servers as a result.
