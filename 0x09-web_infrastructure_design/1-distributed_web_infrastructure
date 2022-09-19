@@ -1,0 +1,23 @@
+1. There are currently two servers. Each server has a separate codebase, database, web server,
+    and application server. If there is a lot of traffic if the other server fails, it will be useful. A HA proxy-
+    loadbalancer is also present. The traffic will be split between the two servers as a result.
+
+2. The two options are Weighted round robin, in which each server is given a weight and the one with the highest
+    weight receives more requests, or Weighted least connection, in which each server is given a weight and requests are
+    routed to the one with the fewest connections.
+3. It employs Active-Active, so if a server ever fails, requests aren't forwarded to it until after a health check, at which
+    point another server takes over. It can also use           active-passive, which means that if the active server ever fails,
+    the passive will immediately take over until the other one recovers.
+
+4. A primary source server (or node) that is permitted to host a read/write availability database is the primary replica. The
+    server that keeps a complete backup copy of the original  server and hosts read-only availability databases is known as a secondary
+    replica. During a failover, whether they are in synchronized or asynchronous mode, the secondary replica takes on the primary role with
+    or without a guarantee of data protection, and when the primary replica becomes available, it takes over.
+
+Issues with the infrastructure:
+1. SPOF still only has one client connected to the network. If these two servers are housed in the same datacenter and use the same power
+    supply there, that poses another problem.
+2. Security concerns persist. Since data is being transferred without being encrypted, it is not using HTTP, which is insecure. Since
+    there is no firewall, every incoming traffic can access the data.
+3. There is no monitoring being done, thus we are unable to determine whether our website is up and running quickly, returning errors
+    frequently, or responding to monitoring requests.

@@ -1,0 +1,14 @@
+1. To better secure the system and regulate traffic, we implemented firewalls. In order to improve performance and data collection, we also implemented monitoring tools that will keep     an eye on both our server and our application.
+2. Hardware or software firewalls shield networks from illegal access.
+    It verifies the arriving and departing data using predetermined rules. It will be permitted to enter if the data complies with the regulations.
+3. The secure variant of HTTP is HTTPS. To move data from one device to another, it employs data encryption. Public keys with SSL certification are delivered back from the server in   response to HTTPS requests. The client engages in an SSL handshake, which entails showing credentials that are compliant with the SSL certificate. This then allows the data to be decrypted in the clients machine. 
+4. To get information about what is happening and how an application or server's performance is, monitoring tools are utilized.
+The data also reveals any irregularities that are lowering performance. The repeating issue is then fixed using the data that was collected.
+Fixing will be simpler as a result of the facts guiding you to the problem's primary focal area.
+5. Data is continuously gathered when a server or application is operating. Performance, accessibility, and user experiences are all continuously analyzed. Then, this data will be transformed into readable form. Therefore, if there is a problem, it will be discovered right away and fixed.
+6. We initially installed monitoring tools. Metrics tracking is possible with these technologies. They may then keep an eye on the queries per second to determine whether it can manage the load and is expandable enough for the incoming queries.
+
+Issues with the infrastructure:
+1. Sensitive data used in transactions will be impacted if SSL is terminated, as transactions must be conducted via a secure connection.
+2. Data can be lost quickly since any modifications this Master makes will also be reproduced on the slave.
+3. The issue is that if the server fails, all of these components will also fail.
