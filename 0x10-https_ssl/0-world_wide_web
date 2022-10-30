@@ -13,9 +13,9 @@ domaininfo () {
 if [ $# -eq 1 ]
 then
 	domaininfo "www.$1"
-	domaininfo "lb-01.$1"
-	domaininfo "web-01.$1"
-	domaininfo "web-02.$1"
+	domaininfo "38194-lb-01.$1"
+	domaininfo "38194-web-01.$1"
+	domaininfo "38194-web-02.$1"
 elif [ $# -eq 2 ]
 then
 	domaininfo "$2.$1"
