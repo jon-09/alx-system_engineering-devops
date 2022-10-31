@@ -4,6 +4,6 @@ sudo apt update
 sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-2.0 -y
 sudo apt update
-lb_config="\nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tserver web-01 100.26.213.216:80 check\n\tserver web-02 352.3.254.234:80 check\n"
+lb_config="\nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tserver web-01 100.26.213.216:80 check\n\tserver web-02 52.3.254.234:80 check\n"
 echo -e "$lb_config" | sudo tee --append /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
